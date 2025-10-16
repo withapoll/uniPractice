@@ -4,7 +4,6 @@
 #include <windows.h>
 using namespace std;
 
-// ====== Прототипы функций ======
 void task1();
 void task2();
 void task3();
@@ -18,7 +17,6 @@ void task10();
 void task11();
 void task12();
 
-// ====== Главная функция ======
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
@@ -69,7 +67,6 @@ int main() {
     return 0;
 }
 
-// ====== Задача 1 ======
 void task1() {
     cout << "Задача 1: Привет, Мир!\n";
     string name, city;
@@ -80,14 +77,12 @@ void task1() {
     cout << "\n" << name << endl << city << endl;
 }
 
-// ====== Задача 2 ======
 void task2() {
     cout << "Задача 2: Сумма двух чисел\n";
     int a = 5, b = 10;
     cout << "Сумма чисел: " << a + b << endl;
 }
 
-// ====== Задача 3 ======
 void task3() {
     cout << "Задача 3: Обмен значениями\n";
     int a = 15, b = 25, temp;
@@ -98,7 +93,6 @@ void task3() {
     cout << "После обмена: a = " << a << ", b = " << b << endl;
 }
 
-// ====== Задача 4 ======
 void task4() {
     cout << "Задача 4: Калькулятор площади прямоугольника\n";
     double length, width;
@@ -109,7 +103,6 @@ void task4() {
     cout << "Площадь прямоугольника: " << length * width << endl;
 }
 
-// ====== Задача 5 ======
 void task5() {
     cout << "Задача 5: Конвертер валют\n";
     const double RATE = 90.5;
@@ -119,7 +112,6 @@ void task5() {
     cout << rub << " рублей = " << rub / RATE << " долларов" << endl;
 }
 
-// ====== Задача 6 ======
 void task6() {
     cout << "Задача 6: Деление с остатком\n";
     int num;
@@ -130,7 +122,6 @@ void task6() {
     cout << "В числе " << num << ": десятков - " << tens << ", единиц - " << ones << endl;
 }
 
-// ====== Задача 7 ======
 void task7() {
     cout << "Задача 7: Префиксный и постфиксный инкремент\n";
     int x = 5;
@@ -140,7 +131,6 @@ void task7() {
     cout << "Пояснение: сначала ++x увеличивает x до 6, затем x++ использует 6 и увеличивает x до 7." << endl;
 }
 
-// ====== Задача 8 ======
 void task8() {
     cout << "Задача 8: Проверка числа\n";
     int num;
@@ -151,7 +141,6 @@ void task8() {
     cout << "Принадлежит диапазону [10, 50]? " << ((num >= 10 && num <= 50) ? "Да." : "Нет.") << endl;
 }
 
-// ====== Задача 9 ======
 void task9() {
     cout << "Задача 9: Логические выражения\n";
     bool a = true, b = false, c = true;
@@ -159,7 +148,6 @@ void task9() {
     cout << "Результат выражения: " << (result ? "true" : "false") << endl;
 }
 
-// ====== Задача 10 ======
 void task10() {
     cout << "Задача 10: Случайное число и его свойства\n";
     int num = rand() % 100;
@@ -175,7 +163,6 @@ void task10() {
     cout << "Счастливое число? " << (lucky ? "Да" : "Нет") << endl;
 }
 
-// ====== Задача 11 ======
 void task11() {
     cout << "Задача 11: Калькулятор с оператором\n";
     double a, b;
@@ -204,7 +191,6 @@ void task11() {
     }
 }
 
-// ====== Задача 12 ======
 void task12() {
     cout << "Задача 12: Перевод секунд\n";
     long long seconds;
